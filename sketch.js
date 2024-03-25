@@ -4,7 +4,7 @@ let serial;
 function setup()
 {
   serial = new p5.SerialPort();
-  serial.open(serialPort);
+  serial.openPort(serialPort);
   createCanvas(320, 240);
 }
 
@@ -21,7 +21,7 @@ function draw()
   else
   {
     Serial.write('L');
-    console.log('R');
+    console.log('L');
   }
 }
 
