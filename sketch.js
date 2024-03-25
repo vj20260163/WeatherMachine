@@ -1,12 +1,9 @@
 const serialPort = 'COM_';
-
-function preload()
-{
-  serial = new p5.SerialPort();
-}
+let serial;
 
 function setup()
 {
+  serial = new p5.SerialPort();
   serial.open(serialPort);
   createCanvas(320, 240);
 }
